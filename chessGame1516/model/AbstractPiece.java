@@ -13,6 +13,7 @@ public abstract class AbstractPiece implements Pieces {
 
 	private int x, y;
 	private Couleur couleur;
+	private PieceStrategy strategy;
 	
 
 	/**
