@@ -20,6 +20,7 @@ public class ChessGame implements BoardGames, IObservable {
 	public boolean move(int xInit, int yInit, int xFinal, int yFinal) {
 		
 		if(!this.echiquier.isMoveOk(xInit, yInit, xFinal, yFinal)) {
+			this.notifyObservers();	// Notify Observers that the processing of a move is finished
 			return false;			
 		}
 		

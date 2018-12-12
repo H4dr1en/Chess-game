@@ -1,6 +1,6 @@
 package model;
 
-
+import model.strategy.PieceStrategy;
 
 /**
  * @author francoise.perrin

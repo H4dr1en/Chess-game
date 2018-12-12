@@ -292,7 +292,9 @@ public class ChessGameGUI extends JFrame implements MouseListener, MouseMotionLi
 	public void mouseReleased(MouseEvent e) {
 
 		Coord  finalCoord = null ;
-
+		
+		this.pieceToMoveCoords = null;
+		
 		if(this.pieceToMove != null) {
 
 			this.pieceToMove.setVisible(false);
